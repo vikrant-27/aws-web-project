@@ -1,0 +1,32 @@
+<settings>
+<servers>
+  <server>
+    <id>vikrant-caf-webapp-webapp-CAF-repo</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>vikrant-caf-webapp-webapp-CAF-repo</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>vikrant-caf-webapp-webapp-CAF-repo</id>
+        <url>https://vikrant-caf-webapp-650251684105.d.codeartifact.us-east-1.amazonaws.com/maven/webapp-CAF-repo/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>vikrant-caf-webapp-webapp-CAF-repo</id>
+    <name>vikrant-caf-webapp-webapp-CAF-repo</name>
+    <url>https://vikrant-caf-webapp-650251684105.d.codeartifact.us-east-1.amazonaws.com/maven/webapp-CAF-repo/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+
+</settings>
